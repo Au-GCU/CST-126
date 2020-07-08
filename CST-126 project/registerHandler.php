@@ -37,7 +37,7 @@ $sql_statement = "INSERT INTO `users` (`ID`, `User_Name`, `First_Name`, `Last_Na
 
 
 if (mysqli_query($connection, $sql_statement)) {
-    echo "Registation successful";
+    echo "Registration successful";
 } else {
     echo "Error: " . $sql_statement . "<br>" . mysqli_error($connection);
 }
