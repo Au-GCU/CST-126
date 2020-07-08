@@ -3,7 +3,10 @@
 /* Daniel Au */
 /* CST-126   */
 /* July 7, 2020 */
+/*Version 1.0*/
 /* Instructor Dr. Kondo Litchmore */
+
+/* This Module establishes a connnection with the database and inserts the data input by the user. */
 
 
 $servername = "localhost";
