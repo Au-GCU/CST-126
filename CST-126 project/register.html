@@ -1,0 +1,33 @@
+<!-- Daniel Au -->
+<!-- CST-126 -->
+<!-- July 9, 2020 -->
+<!-- Version 1.1 -->
+<!-- Instructor Dr. Kondo Litchmore -->
+<!-- This Module is the registration page the user will see along with the action -->
+<!-- the takes the user input to store into the database. -->
+
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+<form action="registerHandler.php" method="POST"> 
+UserName: 	<input type="text" name="User_Name" placeholder="User Name" required> <br>
+First Name: <input type="text" name="First_Name" placeholder="First Name" required> <br> 
+Last Name: 	<input type="text" name="Last_Name" placeholder="Last Name" required> <br>
+Email:		<input type="text" name="Email" placeholder="Email" required> <br>
+Password: 	<input type="password" name="Password" placeholder="Password" required> <br>
+Address1:	<input type="text" name="Address1" placeholder="Address 1" required> <br>
+Address2:	<input type="text" name="Address2" placeholder="Address 2" required> <br>
+City:		<input type="text" name="City" placeholder="City" required> <br>
+State:		<input type="text" name="State" placeholder="State" required> <br>
+Zipcode:	<input type="text" name="Zipcode" placeholder="Zipcode" required> <br>
+Country:	<input type="text" name="Country" placeholder="Country" required> <br>
+			<input type="hidden" name="form_submitted" value="1" /> <br>
+			<input type="submit" name="Register" value="Register" />
+</form>
+
+</body>
+</html>
