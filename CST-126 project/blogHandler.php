@@ -7,18 +7,18 @@ error_reporting(E_ALL);
 require_once('Database/blogService.php');
 
 if (isset($_GET)) {
-    $blog_date = $_GET['Date'];
-    $blog_title = $_GET['Title'];
-    $blog_post = $_GET['Post'];
+    $da = $_GET['Date'];
+    $ti = $_GET['Title'];
+    $po = $_GET['Post'];
 } else {
     header('Location: failed.html');
 }
 
 $blogService = new blogService();
-if ($blogService->badWords($blog_title) || $blogService->badWords($blog_post)) {
+if ($blogService->badWords($ti) || $blogService->badWords($po)) {
     echo "<h1>BAD WORDS FOUND, POST REJECTED</h1>";
 } else {
-    $blogPost = new Blog(NULL, $blog_date, $blog_title, $blog_post);
+    $blogPost = new blog(NULL, $da, $ti, $po);
     if ($blogService->addNewPost($blogPost)) {
         echo "New Blog Added to Server...";
     } else {
