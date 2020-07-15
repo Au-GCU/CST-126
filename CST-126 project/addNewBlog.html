@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New blog</title>
+	
+</head>
+<body>
+<input name="home" type="button" value="Home" onclick="window.location='index.html'" class="Redirect"/>
+<div class="Container">
+		<form action = "blogHandler.php" method = "GET">
+			<div class = "form-group">
+				<input name="date" type="date" placeholder= "Date" data-date-inline-picker="true" required><br>
+				<input name="title" type="text" placeholder="Title" required><br>
+				<input name="post" type="text" placeholder="Post" required><br>
+				<input name="submit" value="Submit" type="submit">
+			</div>
+		</form>
+	<input name="cancel" type="button" value="Cancel" onclick="window.location='blogPage.php'" class="Redirect"/>
+	</div>
+</body>
+</html>

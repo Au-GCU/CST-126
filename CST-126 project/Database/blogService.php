@@ -35,7 +35,7 @@ class blogService {
         $db = new database();
         
         $connection = $db->connect();
-        $stmt = $connection->prepare("INSERT INTO `blog` (`ID`, `DATE`, `TITLE`, `POST`) VALUES (NULL, ?, ?, ?)");
+        $stmt = $connection->prepare("INSERT INTO `Blog_Post` (`ID`, `DATE`, `TITLE`, `POST`) VALUES (NULL, ?, ?, ?)");
         $da = $blog->getDate();
         $ti = $blog->getTitle();
         $po = $blog->getPost();

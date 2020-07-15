@@ -7,9 +7,9 @@ error_reporting(E_ALL);
 require_once('Database/blogService.php');
 
 if (isset($_GET)) {
-    $blog_date = $_GET['date'];
-    $blog_title = $_GET['title'];
-    $blog_post = $_GET['post'];
+    $blog_date = $_GET['Date'];
+    $blog_title = $_GET['Title'];
+    $blog_post = $_GET['Post'];
 } else {
     header('Location: failed.html');
 }
@@ -24,6 +24,6 @@ if ($blogService->badWords($blog_title) || $blogService->badWords($blog_post)) {
     } else {
         echo "New Blog FAILED to be Added to Server...";
     }
-    echo "<br><a href='/CST-126_Project/blogPage.php'>View all blogs..</a>";
+    echo "<br><a href= 'blogPage.php'>View all blogs..</a>";
 }
 ?>
